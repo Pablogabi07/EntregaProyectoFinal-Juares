@@ -1,43 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="theme-color" content="#000000">
-	<!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-    -->
-	<link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-	<link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-	<!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación 50 años</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-	<title>React App</title>
 </head>
-
 <body>
-	<noscript>
-		You need to enable JavaScript to run this app.
-	</noscript>
-	<div id="root"></div>
-	<!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div class="container">
+        <div class="card">
+            <h1 class="titulo">¡Te invito a celebrar mi cumpleaños!</h1>
+            <p><span class="number">50</span></p>
+            <p class="nombre">
+                <img src="/asset/copas.png" alt="izquierda" class="icono">
+                <span>Lili</span>
+                <img src="/asset/copas.png" alt="derecha" class="icono">
+            </p>
+            
+            <div class="separator"></div> <!-- Línea personalizada -->
+            <p class="details">
+                <span class="month">Octubre</span><br>
+                <span class="day-hour">Sabado 11 - 21:00HS</span>
+            </p>
+            <div class="separator"></div> <!-- Línea personalizada -->
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<!-- Botón para confirmar asistencia -->
+<a href="https://wa.me/1162348510?text=Hola,%20confirmo%20mi%20asistencia%20al%20evento" target="_blank" class="confirm-button">Por favor confirmar asistencia</a>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+            
+            <br><br>
+            <a href="https://maps.google.com/?q=Dirección del Evento" target="_blank" class="link-button">Ver Dirección</a>
+        </div>
+    </div>
+    <script src="/data/script.js"></script>
 </body>
-
 </html>
