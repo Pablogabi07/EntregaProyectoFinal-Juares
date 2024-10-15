@@ -1,0 +1,238 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos del cuerpo */
+  body {
+    font-family: 'Arial', sans-serif;
+    background: url('/asset/fondo6.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Asegura espacio lateral en dispositivos pequeños */
+  }
+  
+  /* Contenedor */
+  .container {
+    width: 300%;
+    max-width: 600px; /* Ancho máximo en pantallas grandes */
+    text-align: center;
+  }
+  
+  /* Tarjeta */
+  .card {
+    background-color: rgba(254, 232, 255, 0.9); /* Semitransparente */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Título */
+  h1 {
+    color: #ff6b6b;
+    font-size: 2.5rem;
+  }
+  
+  .titulo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4rem;
+    color: #000000;
+  }
+  
+  /* Número de años */
+  .number {
+    font-family: 'Great Vibes', cursive;
+    font-size: 6rem;
+    color: #ff6b6b;
+  }
+  
+  /* Nombre */
+  .nombre {
+    font-family: 'Great Vibes', cursive;
+    font-size: 6rem;
+    color: #000000;
+  }
+  
+  /* Estilo para los párrafos details */
+  .details {
+    font-family: 'Playfair Display', serif;
+    color: #777;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Mes en la parte superior */
+  .details .month {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Día y hora en la parte inferior */
+  .details .day-hour {
+    font-size: 1.2rem;
+    margin-top: 5px;
+  }
+  
+  /* Estilos para los cuadros de resaltado */
+  .highlight-box {
+    border: 2px solid #ffffff; /* Borde en rojo */
+    padding: 10px;
+    margin: 10px auto; /* Centra el contenedor */
+    width: 70%; /* Ajusta el ancho del cuadro */
+    max-width: 300px; /* Máximo ancho del cuadro */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: rgba(255, 235, 235, 0.5); /* Fondo ligeramente rosado */
+    color: #000000;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  /* Ajustar el tamaño del texto para pantallas pequeñas */
+  @media (max-width: 600px) {
+    .highlight-box {
+      font-size: 1rem; /* Texto un poco más pequeño en pantallas móviles */
+      width: 80%; /* El ancho es más grande en pantallas pequeñas */
+    }
+  }
+  
+  /* Botón para confirmar asistencia */
+  .confirm-button {
+    background-color: #f29efa; /* Verde para confirmar */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 10px; /* Separación respecto a otros elementos */
+  }
+  
+  .confirm-button:hover {
+    background-color: #ff3bff;
+  }
+  
+  /* Otros estilos permanecen igual */
+  .highlight-box {
+    border: 2px solid #ff6b6b;
+    padding: 10px;
+    margin: 10px auto;
+    width: 70%;
+    max-width: 300px;
+    border-radius: 10px;
+    background-color: rgba(255, 235, 235, 0.5);
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  
+  /* Botón de enlace */
+  .link-button {
+    background-color: #f29efa;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Aumenta la separación del botón respecto a los elementos superiores */
+  }
+  
+  .link-button:hover {
+    background-color: #ff3bff;
+  }
+  
+  
+  /* Animación de la tarjeta */
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  /* Adaptaciones para pantallas pequeñas */
+  @media (max-width: 600px) {
+    /* Reducción de tamaño de fuentes y ajuste de espaciado */
+    .titulo {
+      font-size: 3rem;
+    }
+  
+    .number, .nombre {
+      font-size: 4rem;
+    }
+  
+    .details {
+      font-size: 1rem;
+    }
+  
+    .link-button {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+    }
+  
+    .card {
+      padding: 15px;
+    }
+  }
+  
+  
+  /* Línea de separación personalizada */
+  .separator {
+    width: 80%;
+    height: 2px;
+    background-color: #fdb3b3;
+    margin: 10px auto;
+  }
+  
+  /* Estilo para el número con líneas a los lados */
+  .number {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-family: 'Great Vibes', cursive;
+    font-size: 6rem;
+    color: #ff6b6b;
+    position: relative;
+  }
+  
+  .number::before, 
+  .number::after {
+    content: "";
+    flex: 1;
+    height: 2px; 
+    background-color: #fdb3b3; 
+    margin: 0 10px; 
+  }
+  
+  
+  /* Estilo para el nombre con imágenes a los lados */
+  .nombre {
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    font-family: 'Great Vibes', cursive;
+    font-size: 6rem;
+    color: #000000;
+  }
+  
+  .icono {
+    width: 80px; 
+    height: auto;
+    margin: 0 10px; 
+  }
+  
